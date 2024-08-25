@@ -7,6 +7,16 @@ body {
     padding: 0;
 }
 
+.profile-photo {
+    width: 150px; /* Set the desired width */
+    height: 150px; /* Set the desired height */
+    border-radius: 50%; /* Makes the image circular */
+    display: block;
+    margin: 0 auto 20px auto; /* Center the image and add spacing below */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for depth */
+}
+
+
 .container {
     width: 80%;
     margin: 20px auto;
