@@ -8,8 +8,8 @@ body {
 }
 
 .profile-photo {
-    width: 150px; /* Set the desired width */
-    height: 150px; /* Set the desired height */
+    width: 160px; /* Set the desired width */
+    height: 205px; /* Set the desired height */
     border-radius: 50%; /* Makes the image circular */
     display: block;
     margin: 0 auto 20px auto; /* Center the image and add spacing below */
