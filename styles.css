@@ -1,6 +1,11 @@
 /* General styles */
 body {
     font-family: 'Roboto', sans-serif;
+    background-image: url('https://www.pexels.com/photo/gradient-background-with-bright-multicolored-lights-7130544/');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
