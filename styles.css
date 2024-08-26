@@ -100,6 +100,21 @@ a:hover {
     list-style-type: disc;
     margin-left: 20px;
 }
+/* Pointer link */
+.pointer-link {
+  display: inline-block;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.pointer-link a {
+  text-decoration: none;
+  color: #0077b5; /* LinkedIn blue color */
+}
+
+.pointer-link a:hover {
+  text-decoration: underline;
+}
 
 /* Responsive */
 @media (max-width: 600px) {
