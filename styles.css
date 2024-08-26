@@ -1,7 +1,7 @@
 /* General styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url('https://www.pexels.com/photo/gradient-background-with-bright-multicolored-lights-7130544/');
+    background-image: url('https://github.com/tanmaybiswas007/tanmaybiswas007.github.io/blob/main/colorful_background.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -21,6 +21,23 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3, h4, p, ul, li {
+    margin: 0 0 15px 0;
+}
+
+a {
+    color: #00bfff; /* A color that contrasts well with the dark background */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.header-info {
+    margin-left: 20px;
 }
 
 /* Header */
