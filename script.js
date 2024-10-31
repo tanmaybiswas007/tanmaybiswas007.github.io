@@ -1,4 +1,6 @@
-setInterval(() => {
+document.addEventListener('DOMContentLoaded', function() {
+    setInterval(() => {
+     
   // get time indicator elements
   let hours = document.getElementById("hrs");
   let minutes = document.getElementById("mins");
@@ -44,4 +46,7 @@ setInterval(() => {
   dotH.style.transform = `rotate(${h * 30}deg)`;
   dotM.style.transform = `rotate(${m * 6}deg)`;
   dotS.style.transform = `rotate(${s * 6}deg)`;
-}, 1000);
+
+    }, 1000);
+});
+
