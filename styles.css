@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #2f363e;
+}
+
+/* Clock Styles */
+.clock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 25vh; /* Reduced from 40vh */
+    background: #2f363e;
+}
+
+#time {
+    display: flex;
+    gap: 20px; /* Reduced from 40px */
+    color: #fff;
+    transform: scale(0.7); /* Added to make entire clock 70% of original size */
+}
+
+#time .circle {
+    position: relative;
+    width: 100px; /* Reduced from 150px */
+    height: 100px; /* Reduced from 150px */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#time .circle svg {
+    position: relative;
+    width: 100px; /* Reduced from 150px */
+    height: 100px; /* Reduced from 150px */
+    transform: rotate(270deg);
+}
+
+#time .circle svg circle {
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke: #191919;
+    stroke-width: 3; /* Reduced from 4 */
+    transform: translate(3px, 3px); /* Reduced from 5px */
+}
+
+#time .circle svg circle:nth-child(2) {
+    stroke: var(--color);
+    stroke-dasharray: 283; /* Adjusted from 440 based on new circumference */
+}
+
+#time div {
+    position: absolute;
+    text-align: center;
+    font-weight: 500;
+    color: #fff;
+}
+
+#time div p {
+    font-size: 1.8em; /* Reduced from 2.5em */
+    font-weight: 300;
+    color: var(--color);
+}
+
+#time div .time-text {
+    font-size: 0.6em; /* Reduced from 0.7em */
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.ap {
+    position: relative;
+    font-size: 0.8em; /* Reduced from 1em */
+    transform: translateX(-15px); /* Reduced from -20px */
+}
+
+.dots {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+}
+
+.dots::before {
+    content: '';
+    position: absolute;
+    top: -2px; /* Reduced from -3px */
+    width: 10px; /* Reduced from 15px */
+    height: 10px; /* Reduced from 15px */
+    background: var(--color);
+    border-radius: 50%;
+    box-shadow: 0 0 15px var(--color),
+                0 0 45px var(--color); /* Reduced shadow spread */
+}
+
+/* Resume Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header-info h1 {
+    font-size: 2.5em;
+    color: #2f363e;
+    margin-bottom: 10px;
+}
+
+.header-info h2 {
+    font-size: 1.5em;
+    color: #555;
+    font-weight: 400;
+}
